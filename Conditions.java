@@ -155,5 +155,33 @@ public class Conditions
         String flavor = s.next();
         System.out.println("Favorite ice cream flavor:" + flavor);
         
+        
+        
+    }
+    public static void extraOperatorsExamples()
+    {
+        /*
+         * augmented assignment operators: +=, -=,*=,/=,%=
+         * These are the same as Python.
+         * Perform the specified mathematical operation to the variable and then assign the resulting value to the same variable.
+         * 
+         */
+        int x = 7;
+        int y = 7;
+        int z = 7;
+        x = x+1;
+        y+= 1;
+        z++; 
+        /*
+         * post increment/decrement operators (++/--)
+         * increase decrease by 1
+         * shortcut
+         * equiv to adding/subtracting 1 to/from variable.
+         * 
+         */
+        int a = 7;
+        int b = a++; // returns current a value first, makes b = 7, a then goes up to 8???
+        
+        
     }
 }
