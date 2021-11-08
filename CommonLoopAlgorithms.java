@@ -21,7 +21,20 @@ public class CommonLoopAlgorithms
      */
     public static int countMatchesForPrefix()
     {
-        return 0;
+        Scanner s = new Scanner(System.in);
+        do{
+        
+        System.out.println("Type in a wordd, type 'quit' to stop");
+        String word = s.next();
+        String wonky = word.substring(0,4);
+        int counter = 0;
+        if(wonky == "con"){
+            counter += 1;
+            
+        }
+        }
+        while (word != "quit");
+        
     }
 
     /*
