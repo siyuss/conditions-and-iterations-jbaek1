@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class CommonLoopAlgorithms
 {
     /*
@@ -22,18 +21,21 @@ public class CommonLoopAlgorithms
     public static int countMatchesForPrefix()
     {
         Scanner s = new Scanner(System.in);
+        String word;
+        int counter = 0;
         do{
         
-        System.out.println("Type in a wordd, type 'quit' to stop");
-        String word = s.next();
-        String wonky = word.substring(0,4);
-        int counter = 0;
-        if(wonky == "con"){
+        System.out.println("Type in a word, type 'quit' to stop");
+        word = s.next().toLowerCase();
+        String wonky = word.substring(0,3);
+        if(wonky.equals("con")){
             counter += 1;
             
         }
+        
         }
-        while (word != "quit");
+        while (!word.equals( "quit"));
+        return counter;
         
     }
 
