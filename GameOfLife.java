@@ -219,7 +219,7 @@ public class GameOfLife
         /*
          * !!! adjust the number of rows and columns to match your pattern
          */
-        GameOfLife game = new GameOfLife(6 /* rows */, 6 /* columns */);
+        GameOfLife game = new GameOfLife(6, 6);
 
         // populate the game
         game.populateGame();
