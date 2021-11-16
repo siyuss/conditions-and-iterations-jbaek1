@@ -1,0 +1,168 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+11
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.11.jar;C:\Program Files\BlueJ\lib\junit-jupiter-5.5.2.jar;C:\Program Files\BlueJ\lib\junit-jupiter-api-5.5.2.jar;C:\Program Files\BlueJ\lib\junit-jupiter-engine-5.5.2.jar;C:\Program Files\BlueJ\lib\junit-jupiter-migrationsupport-5.5.2.jar;C:\Program Files\BlueJ\lib\junit-jupiter-params-5.5.2.jar;C:\Program Files\BlueJ\lib\junit-platform-commons-1.5.2.jar;C:\Program Files\BlueJ\lib\junit-platform-console-1.5.2.jar;C:\Program Files\BlueJ\lib\junit-platform-console-standalone-1.5.2.jar;C:\Program Files\BlueJ\lib\junit-platform-engine-1.5.2.jar;C:\Program Files\BlueJ\lib\junit-platform-launcher-1.5.2.jar;C:\Program Files\BlueJ\lib\junit-platform-reporting-1.5.2.jar;C:\Program Files\BlueJ\lib\junit-platform-runner-1.5.2.jar;C:\Program Files\BlueJ\lib\junit-platform-suite-api-1.5.2.jar;C:\Program Files\BlueJ\lib\junit-platform-testkit-1.5.2.jar;C:\Program Files\BlueJ\lib\junit-quickcheck-core-0.9.jar;C:\Program Files\BlueJ\lib\junit-vintage-engine-5.5.2.jar;C:\Program Files\BlueJ\lib\hamcrest-core-1.3.jar;C:\Program Files\BlueJ\lib\hamcrest-library-1.3.jar;C:\Program Files\BlueJ\lib\lang-stride.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.base.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.controls.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.fxml.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.graphics.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.media.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.properties.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.swing.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.web.jar;C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\gridworld.jar;C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar;C:\Users\JBaek\conditions-and-iterations-jbaek1
+-d
+C:\Users\JBaek\conditions-and-iterations-jbaek1\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+C:\Users\JBaek\conditions-and-iterations-jbaek1\GameOfLife.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\JBaek\conditions-and-iterations-jbaek1\GameOfLife.java...
+Constructing Javadoc information...
+Standard Doclet version 11.0.10
+Building tree for all the packages and classes...
+Generating C:\Users\JBaek\conditions-and-iterations-jbaek1\doc\GameOfLife.html...
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):38: error: package javax.media.protocol does not exist
+import javax.media.protocol.DataSource;
+                           ^
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):40: error: package javax.media.format does not exist
+import javax.media.format.VideoFormat;
+                         ^
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):51: error: cannot find symbol
+public class JpegImagesToMovie implements ControllerListener, 
+                                          ^
+  symbol: class ControllerListener
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):52: error: cannot find symbol
+  DataSinkListener {
+  ^
+  symbol: class DataSinkListener
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):68: error: cannot find symbol
+                               MediaLocator outML) {
+                               ^
+  symbol:   class MediaLocator
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):120: error: cannot find symbol
+                         MediaLocator outML) {
+                         ^
+  symbol:   class MediaLocator
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):137: error: cannot find symbol
+                      MediaLocator outML,
+                      ^
+  symbol:   class MediaLocator
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):233: error: cannot find symbol
+                      MediaLocator outML,
+                      ^
+  symbol:   class MediaLocator
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):323: error: cannot find symbol
+  DataSink createDataSink(Processor p, MediaLocator outML) {
+                          ^
+  symbol:   class Processor
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):323: error: cannot find symbol
+  DataSink createDataSink(Processor p, MediaLocator outML) {
+                                       ^
+  symbol:   class MediaLocator
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):323: error: cannot find symbol
+  DataSink createDataSink(Processor p, MediaLocator outML) {
+  ^
+  symbol:   class DataSink
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):354: error: cannot find symbol
+  boolean waitForState(Processor p, int state) {
+                       ^
+  symbol:   class Processor
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):368: error: cannot find symbol
+  public void controllerUpdate(ControllerEvent evt) {
+                               ^
+  symbol:   class ControllerEvent
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):410: error: cannot find symbol
+  public void dataSinkUpdate(DataSinkEvent evt) {
+                             ^
+  symbol:   class DataSinkEvent
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):506: error: cannot find symbol
+  static MediaLocator createMediaLocator(String url) {
+         ^
+  symbol:   class MediaLocator
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):35: error: package javax.media does not exist
+import javax.media.*;
+^
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):36: error: package javax.media.control does not exist
+import javax.media.control.*;
+^
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):37: error: package javax.media.protocol does not exist
+import javax.media.protocol.*;
+^
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):39: error: package javax.media.datasink does not exist
+import javax.media.datasink.*;
+^
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):537: error: cannot find symbol
+  class ImageDataSource extends PullBufferDataSource {
+                                ^
+  symbol:   class PullBufferDataSource
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):604: error: cannot find symbol
+  class ImageSourceStream implements PullBufferStream {
+                                     ^
+  symbol:   class PullBufferStream
+  location: class JpegImagesToMovie
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):548: error: cannot find symbol
+    public void setLocator(MediaLocator source) {
+                           ^
+  symbol:   class MediaLocator
+  location: class JpegImagesToMovie.ImageDataSource
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):551: error: cannot find symbol
+    public MediaLocator getLocator() {
+           ^
+  symbol:   class MediaLocator
+  location: class JpegImagesToMovie.ImageDataSource
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):578: error: cannot find symbol
+    public PullBufferStream[] getStreams() {
+           ^
+  symbol:   class PullBufferStream
+  location: class JpegImagesToMovie.ImageDataSource
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):587: error: cannot find symbol
+    public Time getDuration() {
+           ^
+  symbol:   class Time
+  location: class JpegImagesToMovie.ImageDataSource
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):608: error: cannot find symbol
+    VideoFormat format;
+    ^
+  symbol:   class VideoFormat
+  location: class JpegImagesToMovie.ImageSourceStream
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):639: error: cannot find symbol
+    public void read(Buffer buf) throws IOException {
+                     ^
+  symbol:   class Buffer
+  location: class JpegImagesToMovie.ImageSourceStream
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):693: error: cannot find symbol
+    public Format getFormat() {
+           ^
+  symbol:   class Format
+  location: class JpegImagesToMovie.ImageSourceStream
+C:\Users\JBaek\conditions-and-iterations-jbaek1\+libs\mediaComp.jar(/JpegImagesToMovie.java):697: error: cannot find symbol
+    public ContentDescriptor getContentDescriptor() {
+           ^
+  symbol:   class ContentDescriptor
+  location: class JpegImagesToMovie.ImageSourceStream
+Generating C:\Users\JBaek\conditions-and-iterations-jbaek1\doc\package-summary.html...
+Generating C:\Users\JBaek\conditions-and-iterations-jbaek1\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Users\JBaek\conditions-and-iterations-jbaek1\doc\allclasses.html...
+Generating C:\Users\JBaek\conditions-and-iterations-jbaek1\doc\allclasses.html...
+Generating C:\Users\JBaek\conditions-and-iterations-jbaek1\doc\index.html...
+29 errors

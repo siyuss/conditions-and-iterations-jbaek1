@@ -48,7 +48,7 @@ public class GameOfLife
      * @post    all actors that comprise the initial state of the game have been added to the grid
      * 
      */
-    public void populateSampleGame()
+    /*public void populateSampleGame()
     {
         // constants for the location of the three cells initially alive
         final int ROCK_1_ROW = 0, ROCK_1_COL = 2;
@@ -67,8 +67,8 @@ public class GameOfLife
         
         // display the newly constructed and populated world
         this.world.show();
-    }
-
+    } 
+    
     /**
      * Creates the actors and inserts them into their initial starting positions in the grid
      *
@@ -78,9 +78,27 @@ public class GameOfLife
      */
     public void populateGame()
     {
-        /*
-         * !!! create your initial pattern here (use the previous method as an example)
-         */ 
+        final int ROCK_1_ROW = 3, ROCK_1_COL = 0;
+        final int ROCK_2_ROW = 2, ROCK_2_COL = 1;
+        final int ROCK_3_ROW = 3, ROCK_3_COL = 1;
+        final int ROCK_4_ROW = 4, ROCK_4_COL = 1;
+        final int ROCK_5_ROW = 3, ROCK_5_COL = 5;
+        final int ROCK_6_ROW = 3, ROCK_6_COL = 4;
+        final int ROCK_7_ROW = 2, ROCK_7_COL = 4;
+        final int ROCK_8_ROW = 4, ROCK_8_COL = 4;
+        Grid<Actor> initialGrid = this.getCurrentGrid();
+
+        this.addLiveCellToGrid(initialGrid, ROCK_1_ROW, ROCK_1_COL);
+        this.addLiveCellToGrid(initialGrid, ROCK_2_ROW, ROCK_2_COL);
+        this.addLiveCellToGrid(initialGrid, ROCK_3_ROW, ROCK_3_COL);
+        this.addLiveCellToGrid(initialGrid, ROCK_4_ROW, ROCK_4_COL);
+        this.addLiveCellToGrid(initialGrid, ROCK_5_ROW, ROCK_5_COL);
+        this.addLiveCellToGrid(initialGrid, ROCK_6_ROW, ROCK_6_COL);
+        this.addLiveCellToGrid(initialGrid, ROCK_7_ROW, ROCK_7_COL);
+        this.addLiveCellToGrid(initialGrid, ROCK_8_ROW, ROCK_8_COL);
+        
+        this.world.show();
+
     }
 
     /**
@@ -100,18 +118,49 @@ public class GameOfLife
         // get the grid currently associated with this game
         Grid<Actor> grid = this.getCurrentGrid();
 
-        /*
-         * !!! insert your Game of Life algorithm here...
-         */ 
+        int columns = grid.getNumCols();
+        int rows = grid.getNumRows();
+        for (int columntocheck = 0; columntocheck < columns; columntocheck++){
+            for (int rowtocheck = 0; rowtocheck < rows; rowtocheck++){
+                if (isCellAliveInGrid(grid,rowtocheck,columntocheck)== true){
+                    if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) == 2){
+                        // let it live 
+                    }
+                    else if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) == 3){
+                        // let it live
+                    }
+                    else if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) <2){
+                        // kill it 
+                    }
+                    
+                    }
+                else if (isCellAliveInGrid(grid,rowtocheck,columntocheck == false){
+                    if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) == 3){
+                        // let it live
+                    }
+                    
+                }
+                }
+                }
+                
+                }
+                    
+                
+                
+                    
+                
+            
+            
         
 
-    }
-
+    
+    
     /**
      * Returns the number of rows in the game board
      *
      * @return    the number of rows in the game board
      */
+
     public int getNumRows()
     {
         return this.rows;
