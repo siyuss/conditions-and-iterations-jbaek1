@@ -134,11 +134,14 @@ public class GameOfLife
                     }
                     
                     }
-                else if (isCellAliveInGrid(grid,rowtocheck,columntocheck == false){
+                else if (isCellAliveInGrid(grid,rowtocheck,columntocheck) == false){ 
                     if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) == 3){
                         // let it live
                     }
-                    
+                    else{
+                                          // die
+  
+                    }
                 }
                 }
                 }
