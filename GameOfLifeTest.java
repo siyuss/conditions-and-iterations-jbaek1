@@ -58,7 +58,7 @@ public class GameOfLifeTest
         final int ROWS = 5;
         final int COLS = 5;
         GameOfLife game = new GameOfLife(ROWS, COLS);
-        game.populateSampleGame();
+        game.populateGame();
 
         for(int row = 0; row < ROWS; row++)
         {
@@ -104,7 +104,7 @@ public class GameOfLifeTest
         final int ROWS = 5;
         final int COLS = 5;
         GameOfLife game = new GameOfLife(ROWS, COLS);
-        game.populateSampleGame();
+        game.populateGame();
         game.createNextGeneration();
         game.createNextGeneration();
 
