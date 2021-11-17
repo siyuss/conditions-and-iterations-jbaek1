@@ -117,9 +117,10 @@ public class GameOfLife
 
         // get the grid currently associated with this game
         Grid<Actor> grid = this.getCurrentGrid();
-
+        
         int columns = grid.getNumCols();
         int rows = grid.getNumRows();
+        Grid<Actor> nextgrid = makeNewGrid(rows, columns);
         for (int columntocheck = 0; columntocheck < columns; columntocheck++){
             for (int rowtocheck = 0; rowtocheck < rows; rowtocheck++){
                 if (isCellAliveInGrid(grid,rowtocheck,columntocheck)== true){
