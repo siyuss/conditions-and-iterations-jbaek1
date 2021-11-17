@@ -120,45 +120,30 @@ public class GameOfLife
         
         int columns = grid.getNumCols();
         int rows = grid.getNumRows();
-        Grid<Actor> nextgrid = makeNewGrid(rows, columns);
+        Grid<Actor> nextgen = makeNewGrid(rows, columns);
         for (int columntocheck = 0; columntocheck < columns; columntocheck++){
             for (int rowtocheck = 0; rowtocheck < rows; rowtocheck++){
                 if (isCellAliveInGrid(grid,rowtocheck,columntocheck)== true){
                     if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) == 2){
-                        // let it live 
+                        addLiveCellToGrid(nextgen,rowtocheck,columntocheck);
+                        
                     }
                     else if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) == 3){
-                        // let it live
-                    }
-                    else if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) <2){
-                        // kill it 
+                        addLiveCellToGrid(nextgen,rowtocheck,columntocheck);
                     }
                     
                     }
                 else if (isCellAliveInGrid(grid,rowtocheck,columntocheck) == false){ 
                     if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) == 3){
-                        // let it live
+                        addLiveCellToGrid(nextgen,rowtocheck,columntocheck);
                     }
-                    else{
-                                          // die
-  
-                    }
-                }
-                }
-                }
-                
-                }
                     
-                
-                
-                    
-                
-            
-            
-        
-
-    
-    
+                }
+                }
+                }
+        setCurrentGrid(nextgen);
+        this.world.show();
+        }
     /**
      * Returns the number of rows in the game board
      *
@@ -276,6 +261,14 @@ public class GameOfLife
 
         // populate the game
         game.populateGame();
+        
+        do{
+            
+            
+    }
+        while (
+        
+        
 
         /*
          * !!! Create a loop to repeatedly invoke the createNextGeneration method.
@@ -283,6 +276,7 @@ public class GameOfLife
          *          Thread.sleep(1000); // sleep 1000 milliseconds (1 second)
          */ 
         
-    }
+    
 
+}
 }
