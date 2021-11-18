@@ -10,53 +10,75 @@ public class Conditions
 {
     public static void ifExample()
     {
-        // model a coin flip; 1 heads, 0: tails
-        int coinFlip = (int) (Math.random() * 2);
+        // model a coin flip; 1: heads, 0: tails
+        int coinFlip = (int)(Math.random() * 2);
+        
         /*
-         * if statement
-         * Statements are executed if the conditional expression is true.
-         * Conditional expressions evaluate to either true or false; must go inside parentheses
-         * statements are grouped by blocks (i.e. {}), not by indentation
-         */ 
-         if (coinFlip == 1) {
-         System.out.println("Coin is heads!");   
-         }
-         /*
-          * if-else statement
-          * The else block is executed if the condition evaluates to false.
-          */
-          if (coinFlip == 1) {
-         System.out.println("Coin is heads!"); 
+         * if statment
+         *  Statements are executed if the conditional expression is true.
+         *  
+         * Conditional expressions evaluate to either true or false.
+         * The conditional expression must go inside of parentheses.
+         * Statements are grouped by blocks (i.e., {}), not indentation like in python.
+         * There is no colon after the conditional expresion, unlike python.
+         * 
+         */
+        
+        if (coinFlip == 1)
+        {
+            System.out.println("Coin is heads!");
         }
-        else{
-          System.out.println("Coin is tails!");
-          System.out.println("Better luck next time!");
+        
+        /*
+         * if-else statement
+         *  The else block is executed if the condition evaluates to false.
+         */
+        if (coinFlip == 1)
+        {
+            System.out.println("Coin is heads!");
         }
+        else
+        {
+            System.out.println("Coin is tails!");
+            System.out.println("Better luck next time...");
+        }
+    
         // model the roll of a four-sided die [1-4]
-        int dieRoll = (int) (Math.random() * 4) + 1;
+        int dieRoll = (int)(Math.random() * 4) + 1;
+        
         /*
          * if-else if-else statement
-         * In java, "else if" is used instead of "elif" like Python
+         *  In Java, "else if" is used instead of "elif" like Python.
          */
         if (dieRoll == 1)
         {
             System.out.println("rolled a one");
         }
-        else if (dieRoll == 2) 
+        else if (dieRoll == 2)
         {
-            System.out.println("rolled a 2");
+            System.out.println("rolled a two");
         }
-        else if (dieRoll == 3) // can have as many as needed
+        else if (dieRoll == 3)  // can have as many as needed
         {
-            System.out.println("rolled a 3");
+            System.out.println("rolled a three");
         }
-        else if (dieRoll == 4) 
+        else
         {
-            System.out.println("rolled a 4");
+            System.out.println("rolled a four");
         }
         
+        /*
+         *  { } are not required for a single statement.
+         *          However, they are always a good idea.
+         *          Leaving them out can lead to bug, like this one:
+         */
+        if (coinFlip == 0)
+            System.out.println("Coin is tails!");
+            System.out.println("Better luck next time. ");
+        
     }
-      public static void stringExample()
+    
+    public static void stringExample()
     {
         Scanner s = new Scanner(System.in);
         System.out.print("Enter two words: ");
@@ -137,51 +159,79 @@ public class Conditions
         {
             System.out.println("The first string has more than 3 characters.");
         }
+        
+        
+        
         /*
-         * another short circuit
-         * if left operand is true, right oeprand not get evald because OR operatrion is already true.
+         * This is another "short circuit" example.
          * 
-         * this may result in a bug. 
+         * If the left operand is true, the right operand will not be evaluated
+         *      because the OR operation is already true.
+         * 
+         * This may result in a bug.
          */
-        
-        
-        
-        System.out.println("Enter your two favorite fruits:");
-        if (s.next().equals("kiwi") || s.next().equals("kiwi")) // chaining methods
+        System.out.print("Enter your two favorite fruits: ");  // "kiwi banana"
+        if(s.next().equals("kiwi") || s.next().equals("kiwi"))   // chaining methods
         {
-            System.out.println("Kiwi is one of my favorite fruits too!");
+            System.out.println("Kiwi is one of my favorites too!");
+        
         }
-        System.out.print("Enter your favorite ice cream flavor:");
+        
+        System.out.print("Enter your favorite ice cream flavor: ");
+        
         String flavor = s.next();
-        System.out.println("Favorite ice cream flavor:" + flavor);
-        
-        
-        
+        System.out.println("Favorite ice cream flavor: " + flavor);
+
     }
-    public static void extraOperatorsExamples()
+    
+    
+    public static void extraOperatorsExample()
     {
         /*
-         * augmented assignment operators: +=, -=,*=,/=,%=
-         * These are the same as Python.
-         * Perform the specified mathematical operation to the variable and then assign the resulting value to the same variable.
+         * augmented assignment operators: +=, -=, *=, /=,  %=
+         * 
+         * These are the same as in Python.
+         * Perform the specified mathematical operation to the variable and then assign the
+         *      resulting value to the same variable.
          * 
          */
         int x = 7;
         int y = 7;
         int z = 7;
-        x = x+1;
-        y+= 1;
-        z++; 
+        
+        x = x + 1;
+        y += 1;
+        z++;
+        
+        System.out.println("x = " + x + "; y = " + y + "; z = " + z);
+        
         /*
-         * post increment/decrement operators (++/--)
-         * increase decrease by 1
-         * shortcut
-         * equiv to adding/subtracting 1 to/from variable.
-         * 
+         *  post increment/decrement operators (++/--)
+         *  
+         *  These are equivalent to adding/subtracting 1 to/from the variable.
+         *  These return the value before performing the increment/decrement.
          */
+        
         int a = 7;
-        int b = a++; // returns current a value first, makes b = 7, a then goes up to 8???
+        int b = a++;
         
+        System.out.println("a = " + a + "; b = " + b);  // a = 8; b = 7
         
+        /*
+         * pre increment/decrement operators (++/--)
+         * 
+         *  These return the value after performing the increment/decrement.
+         */
+        int c = 7;
+        int d = ++c;
+        System.out.println("c = " + c + "; d = " + d);  // c = 8; d = 8
     }
+    
+    
+    
+    
+    
+    
+    
+    
 }
