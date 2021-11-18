@@ -262,12 +262,7 @@ public class GameOfLife
         // populate the game
         game.populateGame();
         
-        do{
-            
-            
-    }
-        while (
-        
+       
         
 
         /*
