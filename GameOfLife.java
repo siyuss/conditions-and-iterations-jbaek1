@@ -263,6 +263,10 @@ public class GameOfLife
         game.populateGame();
         
        
+        for (int i = 0; i <=3; i++){
+            game.createNextGeneration();
+            Thread.sleep(5000);
+        }
         
 
         /*
