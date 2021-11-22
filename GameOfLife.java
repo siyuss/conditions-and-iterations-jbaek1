@@ -260,7 +260,7 @@ public class GameOfLife
 
         // populate the game
         game.populateGame();
-        
+        Thread.sleep(1000);
        
         for (int i = 0; i <=3; i++){
             game.createNextGeneration();
