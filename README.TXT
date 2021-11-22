@@ -5,4 +5,8 @@ The interval will not be configurable by the user in real-time and it will be at
 
 The grid will be 6x6
 
-runs for three generations. 
+runs for three iterations. 
+
+pattern displayed consists of symmetric side-oriented "T"'s that turn into side-oriented "M"'s, which turn into four dots at the end. 
+
+Live cells 
