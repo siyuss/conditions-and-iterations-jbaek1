@@ -265,7 +265,7 @@ public class GameOfLife
        
         for (int i = 0; i <=3; i++){
             game.createNextGeneration();
-            Thread.sleep(5000);
+            Thread.sleep(1000);
         }
         
 
