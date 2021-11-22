@@ -123,10 +123,9 @@ public class GameOfLife
         Grid<Actor> nextgen = makeNewGrid(rows, columns);
         for (int columntocheck = 0; columntocheck < columns; columntocheck++){
             for (int rowtocheck = 0; rowtocheck < rows; rowtocheck++){
-                if (isCellAliveInGrid(grid,rowtocheck,columntocheck)== true){
+                if (isCellAliveInGrid(grid,rowtocheck,columntocheck) == true){
                     if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) == 2){
                         addLiveCellToGrid(nextgen,rowtocheck,columntocheck);
-                        
                     }
                     else if (getNumAdjacentLiveCells(grid,rowtocheck,columntocheck) == 3){
                         addLiveCellToGrid(nextgen,rowtocheck,columntocheck);
